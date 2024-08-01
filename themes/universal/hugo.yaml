@@ -1,0 +1,32 @@
+baseURL: https://example.org/
+languageCode: en-us
+title: My New Hugo Site
+enableRobotsTXT: true
+
+params:
+  AuthorName:
+
+menus:
+  main:
+  - name: Home
+    pageRef: /
+    weight: 10
+  - name: Posts
+    pageRef: /posts
+    weight: 20
+  - name: Tags
+    pageRef: /tags
+    weight: 30
+  author_links:
+  - name: "new Name of link"
+    url: "https://www.nist.gov/"
+    weight: 10
+  - name: "Name of second link"
+    url: "https://www.google.com/"
+    weight: 20
+
+module:
+  hugoVersion:
+    extended: false
+    max: ""
+    min: ""
