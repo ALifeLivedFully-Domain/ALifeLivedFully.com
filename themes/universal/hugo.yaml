@@ -30,3 +30,14 @@ module:
     extended: false
     max: ""
     min: ""
+
+mediaTypes:
+  application/x-php:
+    suffixes:
+    - php
+
+outputFormats:
+  php:
+    mediaType: application/x-php
+    isHTML: true
+    baseName: "index"
