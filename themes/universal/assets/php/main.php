@@ -3,7 +3,7 @@
         <h1> Testing PHP </h1>
         <?php
             echo "Hello world";
-            echo "testinggg";
+            echo "testing";
         ?>
     </body>
 </html>
