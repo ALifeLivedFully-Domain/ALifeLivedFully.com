@@ -10,7 +10,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: 🚚 Get latest code
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
+      with:
+        sparse-checkout: |
+          public/*
+        sparse-checkout-cone-mode: false
     
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.3.3
@@ -18,4 +22,4 @@ jobs:
         server: alifelivedfully.com
         username: ${{ secrets.ftp_username }}
         password: ${{ secrets.ftp_password }}
-        server-dir: /Primary_Domain/
+        server-dir: /
