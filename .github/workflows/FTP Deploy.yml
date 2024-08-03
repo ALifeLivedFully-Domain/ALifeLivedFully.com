@@ -1,25 +1,35 @@
+name: 🚀 Deploy website on push to master branch
+
 on: 
   push:
     branches: [ "main" ]
   workflow_dispatch: # Run workflow manually (without waiting for the cron to be called), through the GitHub Actions Workflow page directly
-  
-name: 🚀 Deploy website on push to master branch
+  schedule:
+  - cron:  '0 8 * * *' #every day at 8 am
+
 jobs:
   web-deploy:
     name: 🎉 Deploy
     runs-on: ubuntu-latest
     steps:
+
     - name: 🚚 Get latest code
       uses: actions/checkout@v4
       with:
-        sparse-checkout: |
-          /public/*
-        sparse-checkout-cone-mode: false
-    
-    - name: 📂 Sync files
+        submodules: true
+
+    - name: 🔨 Setup Hugo
+      uses: peaceiris/actions-hugo@v2
+      with:
+        hugo-version: 'latest'
+
+    - name: 🏗️ Build site
+      run: hugo --minify
+
+    - name: 📂 FTP Upload
       uses: SamKirkland/FTP-Deploy-Action@4.3.3
       with:
         server: alifelivedfully.com
         username: ${{ secrets.ftp_username }}
         password: ${{ secrets.ftp_password }}
-        server-dir: /
+        local-dir: public/
