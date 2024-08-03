@@ -3,6 +3,7 @@ github repository for [ALifeLivedFully.com](https://alifelivedfully.com) the per
 
 ## Todo
 - [ ] Impliment design vision for homepage
+- [ ] decide on what pages to include in the heading
 - [ ] create design vision for other pages (potential pages listed below)
   - [ ] Blog: post an update once a month with a podcast, video, blog.
   - [ ] Portfolio: My cozy game, my painting, DIY Watch, etc.
