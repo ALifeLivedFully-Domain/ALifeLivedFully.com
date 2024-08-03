@@ -1,6 +1,6 @@
 <html>
     <body>
-        <h1> I think its caching the php </h1>
+        <h1> Testing PHP </h1>
         <?php
             echo "Current time: " . date("h:i:sa");
         ?>

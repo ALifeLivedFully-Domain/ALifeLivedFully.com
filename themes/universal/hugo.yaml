@@ -39,5 +39,5 @@ mediaTypes:
 outputFormats:
   php:
     mediaType: application/x-php
-    isHTML: true
+    isPlainText: true
     baseName: "index"

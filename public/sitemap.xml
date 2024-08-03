@@ -2,10 +2,10 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/testttt/</loc>
+    <loc>http://localhost:1313/test/</loc>
     <lastmod>2024-07-19T19:29:23-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/testingg/</loc>
+    <loc>http://localhost:1313/testing/</loc>
     <lastmod>2024-07-19T17:57:43-05:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/blue/</loc>
