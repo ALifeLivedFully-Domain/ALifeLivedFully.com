@@ -13,7 +13,7 @@
       <link>http://localhost:1313/test/</link>
       <pubDate>Fri, 19 Jul 2024 19:29:23 -0500</pubDate>
       <guid>http://localhost:1313/test/</guid>
-      <description>Hello world.</description>
+      <description>Hello world.&#xA;Checkout the PHP</description>
     </item>
     <item>
       <title>Testingg</title>
