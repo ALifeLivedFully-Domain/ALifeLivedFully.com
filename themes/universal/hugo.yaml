@@ -1,6 +1,6 @@
 baseURL: https://alifelivedfully.com
 languageCode: en-us
-title: My New Hugo Site
+title: ALifeLivedFully
 enableRobotsTXT: true
 
 params:
@@ -8,15 +8,21 @@ params:
 
 menus:
   main:
-  - name: Blog
-    pageRef: /
+  - name: About
+    pageRef: /about
     weight: 10
+  - name: Blog
+    pageRef: /blog
+    weight: 20
   - name: Portfolio
     pageRef: /portfolio
-    weight: 20
+    weight: 30
+  - name: Services
+    pageRef: /services
+    weight: 40
   - name: Contact
     pageRef: /contact
-    weight: 30
+    weight: 50
 
   author_links:
   - name: "new Name of link"

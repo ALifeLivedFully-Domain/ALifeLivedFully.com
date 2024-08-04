@@ -3,29 +3,36 @@
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
-<title>Testingg | My New Hugo Site</title>
+<title>Testingg | ALifeLivedFully</title>
 
     <link rel="stylesheet" href="/css/main.css">
 
 
-      <script src="/js/main.js"></script>
+      <script src="/js/main.js" defer></script>
 
 
 </head>
 <body>
-  <header class="flex">
-    <h1><a href="http://localhost:1313/">My New Hugo Site</a></h1>
+  <header class="primary-header flex">
+    <h1 class="logo"><a href="http://localhost:1313/">ALifeLivedFully</a></h1>
 
+  <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false"><span class="sr-only">Menu</span></button>
   <nav>
-    <ul class="flex">
+    <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
     <li>
-      <a href="/">Blog</a>
+      <a href="/about/">About</a>
     </li>
     <li>
-      <a>Portfolio</a>
+      <a href="/blog/">Blog</a>
     </li>
     <li>
-      <a>Contact</a>
+      <a href="/portfolio/">Portfolio</a>
+    </li>
+    <li>
+      <a href="/services/">Services</a>
+    </li>
+    <li>
+      <a href="/contact/">Contact</a>
     </li>
     </ul>
   </nav>
