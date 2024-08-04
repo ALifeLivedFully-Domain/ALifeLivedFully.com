@@ -1,37 +1,10 @@
-/* Hello world */
+/* Primary CSS for hugo theme */
 
 
-header {
-  display: flex;
-  background-color: hsl(0, 0%, 25%);
-  color: white;
-  
-}
 
-header a {
-  display: block;
-  color: white;
-  text-decoration-style: none;
-  justify-content: space-between;
-}
-
-header a:hover {
-  background-color: hsl(0, 0%, 10%);
-}
-
-header > nav > ul {
-  display: flex;
-}
-
-header li {
-  list-style-type: none;
-  text-decoration: none;
-  padding: 15px;
-}
-
-h1 {
-  margin-right: auto;
-  padding: 15px;
-}
 
 /* Classes */
+.flex {
+  display: flex;
+  gap: var(--gap 1rem);
+}
