@@ -14,11 +14,14 @@
 </head>
 <body>
   <header class="primary-header flex">
-    <h1 class="logo"><a href="http://localhost:1313/">ALifeLivedFully</a></h1>
+    <h1><a href="http://localhost:1313/">ALifeLivedFully</a></h1>
 
-  <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false"><span class="sr-only">Menu</span></button>
+<label class="hamburger-menu">
+  <input type="checkbox"/>
+</label>
+<aside class="sidebar primary-navigation">
   <nav>
-    <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
+    <ul class="flex">
     <li>
       <a href="/about/">About</a>
     </li>
@@ -36,6 +39,7 @@
     </li>
     </ul>
   </nav>
+</aside>
 
   </header>
   <main>

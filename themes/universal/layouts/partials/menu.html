@@ -11,12 +11,17 @@ Renders a menu for the given menu ID.
 {{- $menuID := .menuID }}
 
 {{- with index site.Menus $menuID }}
-  <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false"><span class="sr-only">Menu</span></button>
+<label class="hamburger-menu">
+  <input type="checkbox"/>
+</label>
+<aside class="sidebar primary-navigation">
   <nav>
-    <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
+    <ul class="flex">
       {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
     </ul>
   </nav>
+</aside>
+    
 {{- end }}
 
 {{- define "partials/inline/menu/walk.html" }}
